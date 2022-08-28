@@ -4,8 +4,7 @@ metadata:
   name: k8s-service
 spec:
   selector:
-    app.kubernetes.io/name: k8s-test-deployment
+    app: k8s-test
   ports:
-    - protocol: TCP
-      port: 8040
+    - port: 8040
       targetPort: 8080
